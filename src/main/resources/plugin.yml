@@ -1,0 +1,23 @@
+name: Sample
+version: 0.1-beta
+description: A sample plugin for spigot 1.12.2
+api-version: "1.12"
+load: POSTWORLD
+author: PatrickKR
+website: https://github.com/patrick-mc
+main: com.github.patrick.sample.SamplePlugin
+database: false
+depend: [Tap, Kotlin]
+prefix: SAMPLE
+commands:
+  sample:
+    description: Sample plugin command
+    aliases: [smpl]
+    permission: command.sample
+    permission-message: You do not have permission to use sample plugin commands.
+    usage: "Usage: /<command> help"
+default-permission: op
+permissions:
+  command.sample:
+    default: op
+    description: Sample plugin command permission
